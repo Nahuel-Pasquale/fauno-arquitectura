@@ -112,7 +112,7 @@ const Navbar = () => {
             <NavLink>ABOUT</NavLink>
           </Link>
           <Link to="./Contact">
-            <NavLink>CONTACTO</NavLink>
+            <NavLink>CONTACT</NavLink>
           </Link>
         </NavMenu>
         {/* <HamburgerContainer onClick={handleOpen}>
