@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavbarUI = styled.nav`
@@ -39,76 +40,84 @@ const Logo = styled.img`
   margin-left: 3rem;
 `;
 
-const HamburgerContainer = styled.div`
-  position: absolute;
-  color: #fff;
-  right: 40px;
-  top: 0;
-  height: 8vh;
-  width: 2.2rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.1rem;
-`;
+// const HamburgerContainer = styled.div`
+//   position: absolute;
+//   color: #fff;
+//   right: 40px;
+//   top: 0;
+//   height: 8vh;
+//   width: 2.2rem;
+//   cursor: pointer;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 0.1rem;
+// `;
 
-const Icon = styled.span`
-  position: relative;
-  background-color: ${(props) =>
-    props.clicked === true ? "transparent" : "#fff"};
-  width: 75%;
-  height: 1px;
-  display: inline-block;
-  transition: all 0.3s;
-  &::before,
-  &::after {
-    background-color: #fff;
-    content: "";
-    width: 100%;
-    height: 1px;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    transition: all 0.3s;
-  }
+// const Icon = styled.span`
+//   position: relative;
+//   background-color: ${(props) =>
+//     props.clicked === true ? "transparent" : "#fff"};
+//   width: 75%;
+//   height: 1px;
+//   display: inline-block;
+//   transition: all 0.3s;
+//   &::before,
+//   &::after {
+//     background-color: #fff;
+//     content: "";
+//     width: 100%;
+//     height: 1px;
+//     display: inline-block;
+//     position: absolute;
+//     left: 0;
+//     transition: all 0.3s;
+//   }
 
-  &::before {
-    top: ${(props) => (props.clicked === true ? "0" : "-0.5rem")};
-    transform: ${(props) =>
-      props.clicked === true ? "rotate(135deg)" : "rotate(0)"};
-  }
-  &::after {
-    top: ${(props) => (props.clicked === true ? "0" : "0.5rem")};
-    transform: ${(props) =>
-      props.clicked === true ? "rotate(-135deg)" : "rotate(0)"};
-  }
-`;
+//   &::before {
+//     top: ${(props) => (props.clicked === true ? "0" : "-0.5rem")};
+//     transform: ${(props) =>
+//       props.clicked === true ? "rotate(135deg)" : "rotate(0)"};
+//   }
+//   &::after {
+//     top: ${(props) => (props.clicked === true ? "0" : "0.5rem")};
+//     transform: ${(props) =>
+//       props.clicked === true ? "rotate(-135deg)" : "rotate(0)"};
+//   }
+// `;
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+  // const handleOpen = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <>
       <NavbarUI>
         <Logo src="images/logo fauno_Mesa de trabajo 1.png"></Logo>
         <NavMenu>
-          <NavLink>HOME</NavLink>
-          <NavLink>WORK</NavLink>
-          <NavLink>ABOUT</NavLink>
-          <NavLink>CONTACT</NavLink>
+          <Link to="./">
+            <NavLink>HOME</NavLink>
+          </Link>
+          <Link to="./Work">
+            <NavLink>WORK</NavLink>
+          </Link>
+          <Link to="./About">
+            <NavLink>ABOUT</NavLink>
+          </Link>
+          <Link to="./Contact">
+            <NavLink>CONTACT</NavLink>
+          </Link>
         </NavMenu>
-        <HamburgerContainer onClick={handleOpen}>
+        {/* <HamburgerContainer onClick={handleOpen}>
           <Icon clicked={isOpen}></Icon>
-        </HamburgerContainer>
+        </HamburgerContainer> */}
       </NavbarUI>
     </>
   );

@@ -35,5 +35,9 @@ export const GlobalStyle = createGlobalStyle`
     }
     a{
         text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration:underline;
     }
 `;
