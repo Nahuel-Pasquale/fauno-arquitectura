@@ -44,11 +44,12 @@ const H2 = styled.h2`
   width: 50%;
   margin-left: 15%;
 `;
-const P = styled.p`
+export const P = styled.p`
   font-family: "Josefin Sans";
   width: 70%;
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: ${(props) => props.fontSize};
+  line-height: ${(props) => props.lineHeight};
+  color: ${(props) => props.color};
   margin-top: 2.5%;
   margin-left: 15%;
 `;
@@ -74,18 +75,18 @@ export const AboutFauno = () => {
       </AboutFaunoImg>
       <AboutFaunoInfo>
         <H2>Sobre FAUNO</H2>
-        <P>
+        <P fontSize="1rem" lineHeight="1.3rem">
           Contamos con la capacidad y experiencia para integrar de manera
           eficiente el diseño, la gestión, la administración y la logística para
           lograr un óptimo desarrollo de cada proceso proyectual y ejecución de
           la obra.
         </P>
-        <P>
+        <P fontSize="1rem" lineHeight="1.3rem">
           El carárter vanguardista define nuestros trabajos en donde hacemos
           fuerte hincapié en el uso de las texturas, las líneas, la temperatura
           y las formas.
         </P>
-        <P>
+        <P fontSize="1rem" lineHeight="1.3rem">
           Siempre comprometidos con la búsqueda constante de mejorar nuestra
           visión de la arquitectura, nuestra relación con ella y la calidad de
           vida de las personas que la habitan.
