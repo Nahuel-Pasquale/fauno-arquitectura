@@ -115,9 +115,6 @@ const Navbar = () => {
             <NavLink>CONTACT</NavLink>
           </Link>
         </NavMenu>
-        {/* <HamburgerContainer onClick={handleOpen}>
-          <Icon clicked={isOpen}></Icon>
-        </HamburgerContainer> */}
       </NavbarUI>
     </>
   );
