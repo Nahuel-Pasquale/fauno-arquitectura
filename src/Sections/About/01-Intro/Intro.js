@@ -73,8 +73,9 @@ const Span = styled.span`
 const Parrafo = styled.p`
   font-family: "Josefin Sans";
   font-weight: lighter;
-  font-size: 1.5rem;
-  text-align: justify;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 1.5rem;
 `;
 
 export const Intro = () => {
@@ -92,10 +93,12 @@ export const Intro = () => {
           <AboutParrafo>
             <Span />
             <Parrafo>
-              Somos un estudio de arquitectura y construcción. Creamos espacios
-              simples, funcionales y luminosos que se conectan con la
-              naturaleza. Agregar la información de la trayectoria si se
-              requiere o los nombres de los integrantes del estudio, etc.
+              Somos un estudio de arquitectura, constructora y desarrolladora
+              conformada por un amplio equipo de profesionales apasionados por
+              la funcionalidad, la simpleza y la luz. Vemos como una necesidad
+              fundamental la precisión en las partes de cada proyecto, desde el
+              trazo de la primera línea hasta el último detalle de terminación
+              en la fase de ejecucion de la obra.
             </Parrafo>
           </AboutParrafo>
         </IntroSection>
