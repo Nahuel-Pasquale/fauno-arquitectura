@@ -8,6 +8,10 @@ export const AboutFaunoContainer = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: ${(props) => props.flexDirection};
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    height: 160vh;
+  }
 `;
 
 export const AboutFaunoImg = styled.div`
@@ -17,6 +21,11 @@ export const AboutFaunoImg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: 1024px) {
+    background-size: 350%;
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 export const AboutFaunoImgOverlay = styled.div`
@@ -36,6 +45,10 @@ const AboutFaunoInfo = styled.div`
   justify-content: center;
   align-items: left;
   flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 const H2 = styled.h2`
@@ -43,6 +56,9 @@ const H2 = styled.h2`
   font-family: "Josefin Sans";
   width: 50%;
   margin-left: 15%;
+  @media screen and (max-width: 1024px) {
+    font-size: 2rem;
+  }
 `;
 export const P = styled.p`
   font-family: "Josefin Sans";
@@ -52,6 +68,9 @@ export const P = styled.p`
   color: ${(props) => props.color};
   margin-top: 2.5%;
   margin-left: 15%;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const FootPage = styled.div`
@@ -65,6 +84,9 @@ export const FootPage = styled.div`
 const H5 = styled.h5`
   font-family: "Josefin Sans";
   margin-top: 10%;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.6rem;
+  }
 `;
 
 export const AboutFauno = () => {

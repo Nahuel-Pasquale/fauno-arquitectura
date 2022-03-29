@@ -11,14 +11,20 @@ const IntroContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    background-size: cover;
+  }
 `;
 const IntroSection = styled.div`
   width: 70%;
-  height: 70%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 const AboutTitulos = styled.div`
@@ -29,16 +35,26 @@ const AboutTitulos = styled.div`
   flex-direction: column;
   align-items: flex-start;
   color: white;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 25%;
+  }
 `;
 
 const H2 = styled.h2`
   font-family: biko;
   font-size: 2.5rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
 const H3 = styled.h3`
   font-family: "Josefin Sans";
   font-size: 2rem;
   font-weight: lighter;
+  @media screen and (max-width: 1024px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const ALink = styled.a`
@@ -51,6 +67,9 @@ const H5 = styled.h5`
   font-size: 1rem;
   font-weight: lighter;
   text-decoration: none;
+  @media screen and (max-width: 1024px) {
+    font-size: 1rem;
+  }
 `;
 
 const AboutParrafo = styled.div`
@@ -61,6 +80,10 @@ const AboutParrafo = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 60%;
+  }
 `;
 
 const Span = styled.span`
@@ -76,6 +99,9 @@ const Parrafo = styled.p`
   font-size: 1.3rem;
   text-align: left;
   line-height: 1.5rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Intro = () => {

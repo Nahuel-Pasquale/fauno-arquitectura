@@ -5,7 +5,6 @@ import {
   AboutFaunoImg,
   AboutFaunoImgOverlay,
   FootPage,
-  P,
 } from "../02-About-fauno/About-fauno";
 
 const WorkInfo = styled.div`
@@ -16,12 +15,19 @@ const WorkInfo = styled.div`
   justify-content: center;
   align-items: left;
   flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 const H5 = styled.h5`
   font-family: "Josefin Sans";
   margin-bottom: 10%;
   color: white;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.6rem;
+  }
 `;
 
 const H2 = styled.h2`
@@ -30,6 +36,23 @@ const H2 = styled.h2`
   width: 40%;
   margin-left: 15%;
   color: white;
+  @media screen and (max-width: 1024px) {
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+`;
+const P = styled.p`
+  font-family: "Josefin Sans";
+  width: 70%;
+  font-size: 1.1rem;
+  line-height: ${(props) => props.lineHeight};
+  color: ${(props) => props.color};
+  margin-top: 2.5%;
+  margin-left: 15%;
+  @media screen and (max-width: 1024px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Work = () => {
@@ -49,7 +72,7 @@ export const Work = () => {
           </H5>
         </FootPage>
         <H2>el TRABAJO</H2>
-        <P fontSize="1.1rem" lineHeight="1.5rem" color="white">
+        <P lineHeight="1.5rem" color="white">
           {" "}
           Para nosotros es escencial la funcionalidad , así como también la
           optimización de recursos basados en la utilización de materiales de
