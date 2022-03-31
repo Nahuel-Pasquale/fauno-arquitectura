@@ -52,6 +52,9 @@ const OverlayImg = styled.img`
   -o-transition: 1.5s ease-out 1.5s both;
   transition: 1.5s ease-out 1.5s both;
   animation-name: ${FadeOut};
+  @media screen and (max-width: 640px) {
+    width: 80%;
+  }
 `;
 
 const LogoOverlay = () => {
