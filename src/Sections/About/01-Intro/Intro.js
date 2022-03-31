@@ -86,10 +86,10 @@ const AboutParrafo = styled.div`
   }
 `;
 
-const Span = styled.span`
-  background-color: white;
-  height: 1px;
-  width: 35%;
+export const DecorationLine = styled.span`
+  background-color: ${({ backgroundColor }) => backgroundColor};
+  height: 2.2px;
+  width: ${({ width }) => width};
   padding-bottom: 0%;
 `;
 
@@ -117,7 +117,7 @@ export const Intro = () => {
             </ALink>
           </AboutTitulos>
           <AboutParrafo>
-            <Span />
+            <DecorationLine backgroundColor="white" width="35%" />
             <Parrafo>
               Somos un estudio de arquitectura, constructora y desarrolladora
               conformada por un amplio equipo de profesionales apasionados por

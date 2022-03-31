@@ -6,8 +6,11 @@ const Hero = styled.div`
   height: 100%;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: cover;
+
+  @media screen and (max-width: 640px) {
+    background-position: center;
+  }
 `;
 
 const CardOverlay = styled.div`
@@ -18,10 +21,14 @@ const CardOverlay = styled.div`
 
 const CardContainer = styled.div`
   position: absolute;
-  left: 18%;
+  left: 10%;
   top: 40%;
   width: 50%;
   color: #fff;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    left: 10%;
+  }
 `;
 
 const CardTitle = styled.h2`
@@ -29,6 +36,10 @@ const CardTitle = styled.h2`
   font-size: 4.5rem;
   text-shadow: 1px 1px 0 rgb(0 0 0 / 75%);
   font-weight: lighter;
+  @media screen and (max-width: 640px) {
+    font-size: 3.2rem;
+    width: 80%;
+  }
 `;
 
 const CardSubtitle = styled.h3`
@@ -37,6 +48,10 @@ const CardSubtitle = styled.h3`
   font-size: 1.4rem;
   margin-top: 1.2rem;
   margin-bottom: 0.7rem;
+  @media screen and (max-width: 640px) {
+    font-size: 1.3rem;
+    width: 90%;
+  }
 `;
 
 const SliderCard = ({ image }) => {

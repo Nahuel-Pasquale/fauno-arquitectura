@@ -38,49 +38,12 @@
   background-color: #fff !important;
 }
 
-@media (min-width: 300px) and (max-width: 901px) {
+@media (min-width: 300px) and (max-width: 640px) {
   .swiper-button-prev,
   .swiper-button-next {
     visibility: hidden;
   }
-  .slider__section__title {
-    font-size: 2rem;
-    padding: 0rem 1rem;
-  }
-  .swiper {
-    width: 100%;
-  }
-
-  @media (min-width: 300px) and (max-width: 360px) {
-    .slider__section__title {
-      font-size: 1.7rem;
-      padding: 0rem 1rem;
-    }
-  }
-  @media (min-width: 700px) and (max-width: 901px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-      visibility: visible;
-    }
-  }
-}
-@media (min-width: 901px) and (max-width: 1400px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    margin: 0rem 2%;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1200px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    margin: 0rem 0rem;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    margin: 0rem 4%;
+  .swiper-pagination {
+    margin-bottom: 8rem;
   }
 }
