@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LogoOverlay from "../../../components/LogoOverlay/LogoOverlay";
-import Navbar from "../../../components/Navbar/Navbar";
+import LandingNavbar from "../../../components/Navbar/LandingNavbar";
 import Slider from "../../../components/Slider/Slider";
 
 import { sliderImages } from "../../../data/data";
@@ -11,13 +11,13 @@ const HeaderUI = styled.header`
   height: 100vh;
 `;
 
-const Header = () => {
+const Header = ({ isOpen, handleChange }) => {
   return (
     <>
       <LogoOverlay />
       <HeaderUI>
+        <LandingNavbar isOpen={isOpen} handleOpen={handleChange} />
         <Slider sliderImages={sliderImages} />
-        <Navbar />
       </HeaderUI>
     </>
   );
