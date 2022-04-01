@@ -11,12 +11,12 @@ const HeaderUI = styled.header`
   height: 100vh;
 `;
 
-const Header = ({ isOpen, handleChange }) => {
+const Header = ({ isOpen, handleOpen }) => {
   return (
     <>
       <LogoOverlay />
       <HeaderUI>
-        <Navbar isOpen={isOpen} handleOpen={handleChange} />
+        <Navbar isOpen={isOpen} handleOpen={handleOpen} />
         <Slider sliderImages={sliderImages} />
       </HeaderUI>
     </>
