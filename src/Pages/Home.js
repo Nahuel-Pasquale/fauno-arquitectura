@@ -8,7 +8,7 @@ import VideoSection from "../Sections/Home/Video/VideoSection";
 export const Home = ({ isOpen, handleOpen }) => {
   return (
     <>
-      <Header isOpen={isOpen} />
+      <Header isOpen={isOpen} handleOpen={handleOpen} />
       <Hamburger isOpen={isOpen} handleOpen={handleOpen} landing />
       <ProjectsSection />
       <VideoSection />
