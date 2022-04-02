@@ -91,6 +91,7 @@ const Logo = styled.img`
 `;
 
 const Navbar = ({ isOpen, handleOpen }) => {
+  console.log(window.innerWidth);
   return (
     <>
       <NavbarUI isOpen={isOpen}>
@@ -98,16 +99,16 @@ const Navbar = ({ isOpen, handleOpen }) => {
           <Logo src="images/logo fauno_Mesa de trabajo 1.png"></Logo>
         </LogoContainer>
         <NavMenu>
-          <Link to="/" onClick={handleOpen}>
+          <Link to="/" onClick={window.innerWidth < 1024 && handleOpen}>
             <NavLink>HOME</NavLink>
           </Link>
           {/* <Link to="./Work">
             <NavLink>WORK</NavLink>
           </Link> */}
-          <Link to="/about" onClick={handleOpen}>
+          <Link to="/about" onClick={window.innerWidth < 1024 && handleOpen}>
             <NavLink>ABOUT</NavLink>
           </Link>
-          <Link to="/contact" onClick={handleOpen}>
+          <Link to="/contact" onClick={window.innerWidth < 1024 && handleOpen}>
             <NavLink>CONTACT</NavLink>
           </Link>
         </NavMenu>
