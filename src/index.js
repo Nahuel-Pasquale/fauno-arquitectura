@@ -2,12 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import { MenuProvider } from "./context/context";
+
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <MenuProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </MenuProvider>,
+
   document.getElementById("root")
 );
 

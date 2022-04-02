@@ -5,11 +5,11 @@ import Header from "../Sections/Home/Header/Header";
 import ProjectsSection from "../Sections/Home/Projects/ProjectsSection";
 import VideoSection from "../Sections/Home/Video/VideoSection";
 
-export const Home = ({ isOpen, handleOpen }) => {
+export const Home = () => {
   return (
     <>
-      <Header isOpen={isOpen} handleOpen={handleOpen} />
-      <Hamburger isOpen={isOpen} handleOpen={handleOpen} landing />
+      <Header />
+      <Hamburger />
       <ProjectsSection />
       <VideoSection />
       <Footer />

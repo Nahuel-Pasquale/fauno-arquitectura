@@ -9,37 +9,17 @@ import { Work } from "./Pages/Work";
 import { GlobalStyle } from "./Styles/GlobalStyles";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpen = () => {
-    setIsOpen(!isOpen);
-  };
   return (
     <>
       <GlobalStyle />
       <Routes>
-        <Route
-          exact
-          path="/"
-          element={<Home isOpen={isOpen} handleOpen={handleOpen} />}
-        ></Route>
-      </Routes>
-      <Routes>
+        <Route exact path="/" element={<Home />}></Route>
+
         <Route exact path="/work" element={<Work />}></Route>
-      </Routes>
-      <Routes>
-        <Route
-          exact
-          path="/about"
-          element={<About isOpen={isOpen} handleOpen={handleOpen} />}
-        ></Route>
-      </Routes>
-      <Routes>
-        <Route
-          exact
-          path="/contact"
-          element={<Contact isOpen={isOpen} handleOpen={handleOpen} />}
-        ></Route>
+
+        <Route exact path="/about" element={<About />}></Route>
+
+        <Route exact path="/contact" element={<Contact />}></Route>
       </Routes>
     </>
   );

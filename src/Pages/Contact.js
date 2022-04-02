@@ -17,12 +17,12 @@ const ContactUI = styled.section`
   }
 `;
 
-export const Contact = ({ isOpen, handleOpen }) => {
+export const Contact = () => {
   return (
     <>
-      <Hamburger isOpen={isOpen} handleOpen={handleOpen} />
+      <Hamburger />
       <ContactUI>
-        <SectionNavbar isOpen={isOpen} handleOpen={handleOpen} />
+        <SectionNavbar />
         <ContactMap />
         <ContactInfo />
       </ContactUI>

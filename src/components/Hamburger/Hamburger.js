@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { MenuContext } from "../../context/context";
 
 const HamburgerContainer = styled.div`
   display: ${(props) => (props.landing ? "none" : "flex")};
@@ -57,10 +58,12 @@ const Icon = styled.span`
   }
 `;
 
-const Hamburger = ({ handleOpen, isOpen, landing }) => {
+const Hamburger = ({ landing }) => {
+  const ctx = useContext(MenuContext);
+  console.log(ctx);
   return (
-    <HamburgerContainer onClick={handleOpen} landing={landing}>
-      <Icon clicked={isOpen}></Icon>
+    <HamburgerContainer onClick={ctx.toggleMenu} landing={landing}>
+      <Icon clicked={ctx.isMenuOpen}></Icon>
     </HamburgerContainer>
   );
 };

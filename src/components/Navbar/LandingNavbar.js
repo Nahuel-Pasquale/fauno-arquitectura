@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { MenuContext } from "../../context/context";
 
 const NavbarUI = styled.nav`
   font-family: var(--tertiary-font);
@@ -90,25 +91,31 @@ const Logo = styled.img`
   }
 `;
 
-const Navbar = ({ isOpen, handleOpen }) => {
-  console.log(window.innerWidth);
+const Navbar = () => {
+  const ctx = useContext(MenuContext);
   return (
     <>
-      <NavbarUI isOpen={isOpen}>
+      <NavbarUI isOpen={ctx.isMenuOpen}>
         <LogoContainer>
           <Logo src="images/logo fauno_Mesa de trabajo 1.png"></Logo>
         </LogoContainer>
         <NavMenu>
-          <Link to="/" onClick={window.innerWidth < 1024 && handleOpen}>
+          <Link to="/" onClick={window.innerWidth < 1024 && ctx.toggleMenu}>
             <NavLink>HOME</NavLink>
           </Link>
           {/* <Link to="./Work">
             <NavLink>WORK</NavLink>
           </Link> */}
-          <Link to="/about" onClick={window.innerWidth < 1024 && handleOpen}>
+          <Link
+            to="/about"
+            onClick={window.innerWidth < 1024 && ctx.toggleMenu}
+          >
             <NavLink>ABOUT</NavLink>
           </Link>
-          <Link to="/contact" onClick={window.innerWidth < 1024 && handleOpen}>
+          <Link
+            to="/contact"
+            onClick={window.innerWidth < 1024 && ctx.toggleMenu}
+          >
             <NavLink>CONTACT</NavLink>
           </Link>
         </NavMenu>
