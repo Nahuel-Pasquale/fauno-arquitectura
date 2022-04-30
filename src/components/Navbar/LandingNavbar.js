@@ -101,9 +101,9 @@ const Navbar = ({ isOpen, handleOpen }) => {
           <Link to="/" onClick={handleOpen}>
             <NavLink>HOME</NavLink>
           </Link>
-          {/* <Link to="./Work">
+          <Link to="./Work">
             <NavLink>WORK</NavLink>
-          </Link> */}
+          </Link>
           <Link to="/about" onClick={handleOpen}>
             <NavLink>ABOUT</NavLink>
           </Link>
