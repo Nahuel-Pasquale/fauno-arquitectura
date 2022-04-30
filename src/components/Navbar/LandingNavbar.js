@@ -103,9 +103,12 @@ const Navbar = () => {
           <Link to="/" onClick={window.innerWidth < 1024 && ctx.toggleMenu}>
             <NavLink>HOME</NavLink>
           </Link>
-          {/* <Link to="./Work">
+          <Link
+            to="./Work"
+            onClick={window.innerWidth < 1024 && ctx.toggleMenu}
+          >
             <NavLink>WORK</NavLink>
-          </Link> */}
+          </Link>
           <Link
             to="/about"
             onClick={window.innerWidth < 1024 && ctx.toggleMenu}

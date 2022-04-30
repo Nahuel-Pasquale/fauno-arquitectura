@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { DecorationLine } from "../../About/01-Intro/Intro";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const SectionContainer = styled.section`
   width: 100%;
