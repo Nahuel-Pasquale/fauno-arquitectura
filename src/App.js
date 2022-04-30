@@ -1,6 +1,5 @@
 // import LogoOverlay from "./components/LogoOverlay/LogoOverlay";
 
-import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { About } from "./Pages/About";
 import { Contact } from "./Pages/Contact";
