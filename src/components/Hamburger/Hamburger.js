@@ -60,7 +60,7 @@ const Icon = styled.span`
 
 const Hamburger = ({ landing }) => {
   const ctx = useContext(MenuContext);
-  console.log(ctx);
+
   return (
     <HamburgerContainer onClick={ctx.toggleMenu} landing={landing}>
       <Icon clicked={ctx.isMenuOpen}></Icon>
