@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <Hamburger />
+      <Hamburger landing color="white"/>
       <ProjectsSection />
       <VideoSection />
       <Footer />

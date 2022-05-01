@@ -9,7 +9,7 @@ import { Work } from "../Sections/About/03-Work/Work";
 export const About = () => {
   return (
     <div>
-      <Hamburger />
+      <Hamburger color="white" />
       <SectionNavbar />
       <Intro />
       <AboutFauno />

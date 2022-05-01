@@ -29,14 +29,14 @@ const HamburgerContainer = styled.div`
 const Icon = styled.span`
   position: relative;
   background-color: ${(props) =>
-    props.clicked === true ? "transparent" : "#fff"};
+    props.clicked === true ? "transparent" : props.color};
   width: 75%;
   height: 1px;
   display: inline-block;
   transition: all 0.3s;
   &::before,
   &::after {
-    background-color: #fff;
+    background-color: ${(props) => props.color};
     content: "";
     width: 100%;
     height: 1px;
@@ -58,12 +58,12 @@ const Icon = styled.span`
   }
 `;
 
-const Hamburger = ({ landing }) => {
+const Hamburger = (props) => {
   const ctx = useContext(MenuContext);
 
   return (
-    <HamburgerContainer onClick={ctx.toggleMenu} landing={landing}>
-      <Icon clicked={ctx.isMenuOpen}></Icon>
+    <HamburgerContainer onClick={ctx.toggleMenu} landing={props.landing}>
+      <Icon clicked={ctx.isMenuOpen} color={props.color}></Icon>
     </HamburgerContainer>
   );
 };

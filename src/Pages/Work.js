@@ -1,10 +1,14 @@
 import React from "react";
 import { Project } from "../Sections/Works/work/Project";
 import { projects } from "../data/data";
+import Footer from "../components/Footer/Footer";
+import Hamburger from "../components/Hamburger/Hamburger";
+
 
 export const Work = () => {
   return (
     <>
+      <Hamburger color="black" />
       <Project
         height="35%"
         padT="5%"
@@ -104,6 +108,7 @@ export const Work = () => {
         bImg={projects[8].bImg}
         images={projects[8].images}
       />
+      <Footer />
     </>
   );
 };
