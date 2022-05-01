@@ -90,7 +90,7 @@ const Footer = () => {
         </SocialFooter>
         <RightsFooter>
           <RightsText>
-            © 2022 Fauno Arquitectura. All right reserved.
+            © 2022 Fauno Arquitectura. All rights reserved.
           </RightsText>
         </RightsFooter>
       </FooterContainer>

@@ -20,7 +20,7 @@ const ContactUI = styled.section`
 export const Contact = () => {
   return (
     <>
-      <Hamburger />
+      <Hamburger color="white" />
       <ContactUI>
         <SectionNavbar />
         <ContactMap />

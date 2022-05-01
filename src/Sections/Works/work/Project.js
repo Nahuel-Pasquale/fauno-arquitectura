@@ -11,6 +11,9 @@ const ProjectContainer = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: ${({ flexDirection }) => flexDirection};
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
 `;
 
 const ProjectDescription = styled.div`
