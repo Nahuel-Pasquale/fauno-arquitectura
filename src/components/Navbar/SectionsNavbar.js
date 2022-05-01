@@ -77,7 +77,7 @@ const SectionNavbar = () => {
           <Link to="/" onClick={ctx.toggleMenu}>
             <NavLink>HOME</NavLink>
           </Link>
-          <Link to="/Work">
+          <Link to="/Work" onClick={ctx.toggleMenu}>
             <NavLink>WORK</NavLink>
           </Link>
           <Link to="/about" onClick={ctx.toggleMenu}>
