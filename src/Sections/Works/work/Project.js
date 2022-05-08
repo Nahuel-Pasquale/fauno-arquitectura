@@ -63,8 +63,13 @@ const ProjectTitle = styled.h2`
        font-size: 2.6rem;
        line-height: 2.6rem;
        background-size: 28%;
-       width: 95%;
        height: 28%;
+    }
+    @media screen and (max-width: 350px) {
+       font-size: 2.3rem;
+       line-height: 2.3rem;
+       background-size: 25%;
+       height: 35%;
     }
 `;
 
@@ -80,6 +85,11 @@ const ProjectDesc = styled.p`
     }
     @media screen and (max-width: 420px) {
        font-size: 0.75rem;
+       letter-spacing: 0.05rem;
+       margin-bottom: 13%;
+    }
+    @media screen and (max-width: 350px) {
+       font-size: 0.7rem;
        letter-spacing: 0.05rem;
        margin-bottom: 13%;
     }
@@ -101,13 +111,13 @@ const ProjectPlaceDesc = styled.p`
        width: 100%;
     }
     @media screen and (max-width: 420px) {
-       font-size: 0.6rem;
-       line-height: -1rem;
        letter-spacing: 0.08rem;
-       margin-left: 0%;
        margin-top: 4%;
-       height: 5%;
-       width: 100%;
+    }
+    @media screen and (max-width: 350px) {
+        font-size: 0.55rem;
+       letter-spacing: 0.06rem;
+       margin-top: 4%;
     }
 `;
 const BlockSpacing = styled.div`
