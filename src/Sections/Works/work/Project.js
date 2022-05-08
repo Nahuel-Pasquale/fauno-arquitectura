@@ -56,8 +56,9 @@ const ProjectTitle = styled.h2`
     @media screen and (max-width: 1024px) {
        font-size: 2.8rem;
        line-height: normal;
-       background-size: 30%;
+       background-size: 25%;
        width: 95%;
+       height: 40%;
     }
     @media screen and (max-width: 750px) {
        background-size: 30%;
@@ -121,9 +122,9 @@ const ProjectPlaceDesc = styled.p`
        margin-top: 6%;
        height: 5%;
        /* width: 100%; */
+       letter-spacing: 0.08rem;
     }
     @media screen and (max-width: 420px) {
-        /* letter-spacing: 0.08rem; */
         margin-top: 4%;
         font-size: 0.55rem;
         letter-spacing: 0.06rem;
