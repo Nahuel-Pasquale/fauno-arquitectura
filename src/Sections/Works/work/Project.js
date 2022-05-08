@@ -92,7 +92,7 @@ const ProjectDesc = styled.p`
     letter-spacing: 0.15rem;
     @media screen and (max-width: 1024px) {
        font-size: 0.8rem;
-       margin-bottom: 13%;
+       margin-bottom: 10%;
        text-align: justify;
     }
     @media screen and (max-width: 420px) {
