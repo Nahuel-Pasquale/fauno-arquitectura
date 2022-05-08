@@ -56,19 +56,19 @@ const ProjectTitle = styled.h2`
     @media screen and (max-width: 1024px) {
        font-size: 2.8rem;
        line-height: normal;
-       background-size: 25%;
+       background-size: 22%;
        width: 95%;
-       height: 40%;
+       height: 35%;
     }
     @media screen and (max-width: 750px) {
-       background-size: 30%;
-       height: 40%;
+       background-size: 28%;
+       height: 35%;
     }
     @media screen and (max-width: 420px) {
        font-size: 2.6rem;
        line-height: 2.6rem;
        background-size: 28%;
-       height: 40%;
+       height: 38%;
     }
     @media screen and (max-width: 390px) {
        /* font-size: 2.3rem;
