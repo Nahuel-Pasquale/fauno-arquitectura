@@ -1,18 +1,17 @@
 import React, { useContext } from "react";
-import { Project } from "../Sections/Works/work/Project";
+import { BlockSpacing, Project } from "../Sections/Works/work/Project";
 import { projects } from "../data/data";
 import Footer from "../components/Footer/Footer";
 import Hamburger from "../components/Hamburger/Hamburger";
 import SectionNavbar from "../components/Navbar/SectionsNavbar";
 import { MenuContext } from "../context/context";
-
 export const Work = () => {
   const ctx = useContext(MenuContext);
-
   return (
     <>
       <Hamburger color={ctx.isMenuOpen ? "white" : "black"} />
       <SectionNavbar />
+      <BlockSpacing />
       <Project
         height="35%"
         padT="5%"
