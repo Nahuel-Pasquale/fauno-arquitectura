@@ -34,10 +34,11 @@ const ProjectDescription = styled.div`
 const ProjectImages = styled.div`
     width: 35%;
     height: 90%;
-    /* margin-right: 5%; */
+    margin-right: 5%;
     @media screen and (max-width: 1024px) {
        width: 90%;
        height: 50%;
+       margin-right: 0%;
     }
 `;
 

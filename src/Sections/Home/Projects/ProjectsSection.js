@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { DecorationLine } from "../../About/01-Intro/Intro";
-// import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import { projects } from "../../../data/data";
 const SectionContainer = styled.section`
   width: 100%;
   height: 100vh;
@@ -31,7 +31,7 @@ const ProjectTitle = styled.h2`
   font-size: 2.5rem;
   font-family: var(--primary-font);
   @media screen and (max-width: 640px) {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 `;
 
@@ -44,9 +44,10 @@ const ProjectP = styled.p`
   text-align: left;
   line-height: 1.7rem;
   @media screen and (max-width: 640px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 100%;
     line-height: 1.3rem;
+    text-align: justify;
   }
 `;
 
@@ -140,15 +141,14 @@ const ProjectsSection = () => {
       <SectionContainer>
         <ProjectDescription>
           <DecorationLine backgroundColor="black" width="30%" />
-          <ProjectTitle>Proyecto 01</ProjectTitle>
+          <ProjectTitle>{projects[2].title}</ProjectTitle>
           <ProjectP>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            nam magni facere tenetur accusamus. Explicabo perspiciatis, dolor
-            asperiores recusandae ea nesciunt tempora ad soluta labore!
-            Obcaecati exercitationem officiis hic voluptatum?
+            {projects[2].projectInfo}
           </ProjectP>
           <ProjectLink>
-            <ProjectButton>VER MÁS</ProjectButton>
+            <Link to="/work"> 
+              <ProjectButton>VER MÁS</ProjectButton>
+            </Link>
           </ProjectLink>
         </ProjectDescription>
         <ProjectImage>
@@ -156,7 +156,9 @@ const ProjectsSection = () => {
         </ProjectImage>
         <ResponsiveBtnContainer>
           <ResponsiveBTN>
-            <ResponsiveBTNLink>VER MÁS</ResponsiveBTNLink>
+            <Link to="/work">
+              <ResponsiveBTNLink>VER MÁS</ResponsiveBTNLink>
+            </Link>
           </ResponsiveBTN>
         </ResponsiveBtnContainer>
       </SectionContainer>

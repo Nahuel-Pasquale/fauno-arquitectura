@@ -98,7 +98,7 @@ const ContactMap = () => {
     <MapSectionContainer>
       <MapContainer>
         <Map
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0167132768424!2d-58.38375908477038!3d-34.60373888045957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1641142354470!5m2!1ses!2sar"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.7607731018766!2d-58.271715385191406!3d-34.71121337069985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e04ce60d8d1%3A0x1b7c15986ab60196!2sLebensohn%20126%2C%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1652030540203!5m2!1ses!2sar"
           title="Fauno"
           allowfullscreen=""
           loading="lazy"
