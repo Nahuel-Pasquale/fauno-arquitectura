@@ -59,6 +59,13 @@ const ProjectTitle = styled.h2`
        background-size: 30%;
        width: 95%;
     }
+    @media screen and (max-width: 420px) {
+       font-size: 2.6rem;
+       line-height: 2.6rem;
+       background-size: 28%;
+       width: 95%;
+       height: 28%;
+    }
 `;
 
 const ProjectDesc = styled.p`
@@ -69,6 +76,11 @@ const ProjectDesc = styled.p`
     letter-spacing: 0.15rem;
     @media screen and (max-width: 1024px) {
        font-size: 0.8rem;
+       margin-bottom: 13%;
+    }
+    @media screen and (max-width: 420px) {
+       font-size: 0.75rem;
+       letter-spacing: 0.05rem;
        margin-bottom: 13%;
     }
 `;
@@ -88,13 +100,19 @@ const ProjectPlaceDesc = styled.p`
        height: 5%;
        width: 100%;
     }
+    @media screen and (max-width: 420px) {
+       font-size: 0.6rem;
+       line-height: -1rem;
+       letter-spacing: 0.08rem;
+       margin-left: 0%;
+       margin-top: 4%;
+       height: 5%;
+       width: 100%;
+    }
 `;
 const BlockSpacing = styled.div`
     width: 100%;
     height: 10vh;
-    @media screen and (max-width: 1024px) {
-       
-    }
 `;
 export const Project = (props) => {
 
