@@ -63,7 +63,7 @@ const ProjectTitle = styled.h2`
        font-size: 2.6rem;
        line-height: 2.6rem;
        background-size: 28%;
-       height: 28%;
+       height: 40%;
     }
     @media screen and (max-width: 390px) {
        /* font-size: 2.3rem;
@@ -88,12 +88,13 @@ const ProjectDesc = styled.p`
     @media screen and (max-width: 1024px) {
        font-size: 0.8rem;
        margin-bottom: 13%;
+       text-align: justify;
     }
     @media screen and (max-width: 420px) {
        font-size: 0.75rem;
        letter-spacing: 0.05rem;
        margin-bottom: 13%;
-       text-align: justify;
+       font-weight: 500;
     }
     @media screen and (max-width: 350px) {
        font-size: 0.7rem;
