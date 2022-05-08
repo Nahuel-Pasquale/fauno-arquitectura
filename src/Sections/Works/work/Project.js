@@ -96,7 +96,7 @@ const ProjectDesc = styled.p`
        text-align: justify;
     }
     @media screen and (max-width: 420px) {
-       font-size: 0.9rem;
+       font-size: 0.75rem;
        letter-spacing: 0.05rem;
        margin-bottom: 13%;
        font-weight: 500;
