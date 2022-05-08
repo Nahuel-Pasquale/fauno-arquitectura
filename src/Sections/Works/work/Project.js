@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from "styled-components";
 import { WorkSlider } from '../../../components/Slider/Slider';
-// import { projects } from '../../../data/data'
+
+
 
 
 const ProjectContainer = styled.section`
@@ -23,13 +24,21 @@ const ProjectDescription = styled.div`
     justify-content: space-between;
     align-items: left;
     flex-direction: column;
+    @media screen and (max-width: 1024px) {
+       width: 90%;
+       height: 35%;
+    }
 `;
 
 
 const ProjectImages = styled.div`
     width: 35%;
     height: 90%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
+    @media screen and (max-width: 1024px) {
+       width: 90%;
+       height: 50%;
+    }
 `;
 
 const ProjectTitle = styled.h2`
@@ -44,6 +53,12 @@ const ProjectTitle = styled.h2`
     padding-left: 7%;
     padding-top: ${({ padT }) => padT};
     line-height: 4.5rem;
+    @media screen and (max-width: 1024px) {
+       font-size: 2.8rem;
+       line-height: normal;
+       background-size: 30%;
+       width: 95%;
+    }
 `;
 
 const ProjectDesc = styled.p`
@@ -52,6 +67,10 @@ const ProjectDesc = styled.p`
     font-family: var(--secondary-font);
     font-size: 1.3rem;
     letter-spacing: 0.15rem;
+    @media screen and (max-width: 1024px) {
+       font-size: 0.8rem;
+       margin-bottom: 13%;
+    }
 `;
 
 const ProjectPlaceDesc = styled.p`
@@ -61,29 +80,55 @@ const ProjectPlaceDesc = styled.p`
     font-size: 1rem;
     line-height: 1.6rem;
     letter-spacing: 0.1rem;
+    @media screen and (max-width: 1024px) {
+       font-size: 0.6rem;
+       line-height: -1rem;
+       margin-left: 0%;
+       margin-top: 6%;
+       height: 5%;
+       width: 100%;
+    }
 `;
 const BlockSpacing = styled.div`
     width: 100%;
     height: 10vh;
+    @media screen and (max-width: 1024px) {
+       
+    }
 `;
-
 export const Project = (props) => {
+
+  const [show, setShow] = useState(true);  
+  const size = window.screen.width;
+  useEffect(() => {
+      console.log(size,show);
+      size > 1024 ? setShow(true) : setShow(false);
+    return show;
+  }, [show, size]);
+  
+
   return (
     <>
         <ProjectContainer flexDirection={props.flexDirection}>
             <ProjectDescription>
                 <ProjectTitle padT={props.padT} height={props.height} background={props.bImg}> { props.title } </ProjectTitle>
                 <ProjectDesc> { props.projectInfo } </ProjectDesc>
-                <div>
-                <ProjectPlaceDesc> { props.placeInfo } </ProjectPlaceDesc>
-                <ProjectPlaceDesc> { props.placeInfo2 } </ProjectPlaceDesc>
-                </div>
+                {show &&
+                (<div>
+                    <ProjectPlaceDesc> { props.placeInfo } </ProjectPlaceDesc>
+                    <ProjectPlaceDesc> { props.placeInfo2 } </ProjectPlaceDesc>
+                </div>)}
             </ProjectDescription>
             <ProjectImages>
                 <WorkSlider images={ props.images } />
             </ProjectImages>
+            {!show &&
+                (<div>
+                    <ProjectPlaceDesc> { props.placeInfo } </ProjectPlaceDesc>
+                    <ProjectPlaceDesc> { props.placeInfo2 } </ProjectPlaceDesc>
+                </div>)}
         </ProjectContainer>
-        <BlockSpacing />
+        {show && <BlockSpacing />}
     </>
   )
 }
