@@ -9,7 +9,6 @@ import SliderCard from "../SliderCard/SliderCard";
 import styled from "styled-components";
 import "./slider.css";
 
-
 const SliderContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -59,6 +58,7 @@ export const WorkSlider = (props) => {
     <>
       <SliderContainer>
         <Swiper
+          className="work-swiper"
           modules={[Pagination, Autoplay, Navigation, EffectFade]}
           pagination={{
             clickable: true,
@@ -72,7 +72,7 @@ export const WorkSlider = (props) => {
           effect="fade"
           speed={300}
         >
-          {(props.images).map((image, index) => (
+          {props.images.map((image, index) => (
             <SwiperSlide key={index}>
               <Hero img={image}></Hero>
             </SwiperSlide>

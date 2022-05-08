@@ -38,6 +38,20 @@
   background-color: #fff !important;
 }
 
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 0.14rem solid #fff;
+  padding: 0.25rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.work-swiper > .swiper-pagination {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 300px) and (max-width: 640px) {
   .swiper-button-prev,
   .swiper-button-next {
