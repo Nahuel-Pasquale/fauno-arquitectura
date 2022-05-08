@@ -97,13 +97,13 @@ const ProjectDesc = styled.p`
     }
     @media screen and (max-width: 420px) {
        font-size: 0.75rem;
-       letter-spacing: 0.05rem;
+       letter-spacing: 0.03rem;
        margin-bottom: 13%;
        font-weight: 500;
     }
     @media screen and (max-width: 350px) {
-       font-size: 0.7rem;
-       letter-spacing: 0.05rem;
+       font-size: 0.68rem;
+       letter-spacing: 0.02rem;
        margin-bottom: 13%;
     }
 `;
@@ -122,7 +122,7 @@ const ProjectPlaceDesc = styled.p`
        margin-top: 6%;
        height: 5%;
        /* width: 100%; */
-       letter-spacing: 0.08rem;
+       letter-spacing: 0.05rem;
     }
     @media screen and (max-width: 420px) {
         margin-top: 4%;
@@ -131,7 +131,7 @@ const ProjectPlaceDesc = styled.p`
     }
     @media screen and (max-width: 350px) {
         font-size: 0.55rem;
-        letter-spacing: 0.06rem;
+        letter-spacing: 0.04rem;
         margin-top: 4%;
     }
 `;
