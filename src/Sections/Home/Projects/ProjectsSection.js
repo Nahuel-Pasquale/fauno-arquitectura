@@ -141,9 +141,9 @@ const ProjectsSection = () => {
       <SectionContainer>
         <ProjectDescription>
           <DecorationLine backgroundColor="black" width="30%" />
-          <ProjectTitle>{projects[2].title}</ProjectTitle>
+          <ProjectTitle>{projects[5].title}</ProjectTitle>
           <ProjectP>
-            {projects[2].projectInfo}
+            {projects[5].projectInfo}
           </ProjectP>
           <ProjectLink>
             <Link to="/work"> 

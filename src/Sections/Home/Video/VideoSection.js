@@ -26,7 +26,7 @@ const VideoSection = () => {
     <VideoContainer>
       <Video
         allowfullscreen
-        src="https://www.youtube.com/embed/HPjGbrVWLzw"
+        src="https://www.youtube.com/watch?v=4y4S9WgzM0U&t=5s"
         poster="imagenes/logo primario arq. const..png"
         title="YouTube video player"
         frameborder="0"
