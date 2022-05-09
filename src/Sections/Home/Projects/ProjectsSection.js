@@ -79,7 +79,7 @@ const ProjectButton = styled.button`
 const ProjectImage = styled.div`
   width: 35%;
   height: 75%;
-  background: url(images/IMAGEN01.jpg);
+  background: url(images/casa-del-arbol/01.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
