@@ -17,7 +17,7 @@ const SliderContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 10vh; */
+    margin-bottom: 20vh;
 `
 
 const Hero = styled.div`
@@ -26,6 +26,14 @@ const Hero = styled.div`
     background-image: ${({ img }) => `url(${img})`};
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 10vh;
+    margin-left: 10%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        height: 100%;
+        margin-top: 0vh;
+        margin-left: 0%;
+    }
 `
 
 

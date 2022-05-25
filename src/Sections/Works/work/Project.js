@@ -172,7 +172,7 @@ export const Project = (props) => {
                     <ProjectPlaceDesc> { props.placeInfo } </ProjectPlaceDesc>
                     <ProjectPlaceDesc> { props.placeInfo2 } </ProjectPlaceDesc>
                 </div>)}
-                {showModal && <SliderModal onClick={() => setShowModal(false)} images={ props.images } />}
+        {showModal && <SliderModal onClick={() => setShowModal(false)} images={ props.images } />}
         </ProjectContainer>
         {show && <BlockSpacing />}
     </>
