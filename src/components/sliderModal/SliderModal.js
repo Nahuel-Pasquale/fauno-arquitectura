@@ -13,10 +13,9 @@ const SliderContainer = styled.div`
     width: 100%;
     height: 100vh;
     position: fixed;
+    top:0;
+    left:0;
     z-index: 99999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20vh;
 `
 
@@ -42,7 +41,7 @@ const SliderModal = (props) => {
     <>
         <SliderContainer>
         <Swiper
-        //   className="work-swiper"
+          className="work-swiper"
           modules={[Pagination, Autoplay, Navigation, EffectFade]}
           pagination={{
             clickable: true,

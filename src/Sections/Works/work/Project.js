@@ -140,6 +140,8 @@ export const BlockSpacing = styled.div`
     width: 100%;
     height: 10vh;
 `;
+
+
 export const Project = (props) => {
 
   const [show, setShow] = useState(true);  
@@ -165,14 +167,14 @@ export const Project = (props) => {
                 </div>)}
             </ProjectDescription>
             <ProjectImages>
-                <WorkSlider onClick={ () => setShowModal(true) } images={ props.images } />
-            </ProjectImages>
+                <WorkSlider onClick={ () => {setShowModal(!showModal); console.log("SHOWMODAL", showModal)} } images={ props.images } />
+            </ProjectImages>            
             {!show &&
                 (<div>
                     <ProjectPlaceDesc> { props.placeInfo } </ProjectPlaceDesc>
                     <ProjectPlaceDesc> { props.placeInfo2 } </ProjectPlaceDesc>
                 </div>)}
-        {showModal && <SliderModal onClick={() => setShowModal(false)} images={ props.images } />}
+            {showModal && <SliderModal onClick={() => setShowModal(!showModal)} images={ props.images } />}
         </ProjectContainer>
         {show && <BlockSpacing />}
     </>
