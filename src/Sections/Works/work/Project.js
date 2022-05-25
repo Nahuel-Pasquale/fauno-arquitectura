@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from "styled-components";
 import { WorkSlider } from '../../../components/Slider/Slider';
-
+import SliderModal from '../../../components/sliderModal/SliderModal';
 
 
 
@@ -143,6 +143,7 @@ export const BlockSpacing = styled.div`
 export const Project = (props) => {
 
   const [show, setShow] = useState(true);  
+  const [showModal, setShowModal] = useState(false);  
   const size = window.screen.width;
   useEffect(() => {
       console.log(size,show);
@@ -164,13 +165,14 @@ export const Project = (props) => {
                 </div>)}
             </ProjectDescription>
             <ProjectImages>
-                <WorkSlider images={ props.images } />
+                <WorkSlider onClick={ () => setShowModal(true) } images={ props.images } />
             </ProjectImages>
             {!show &&
                 (<div>
                     <ProjectPlaceDesc> { props.placeInfo } </ProjectPlaceDesc>
                     <ProjectPlaceDesc> { props.placeInfo2 } </ProjectPlaceDesc>
                 </div>)}
+                {showModal && <SliderModal onClick={() => setShowModal(false)} images={ props.images } />}
         </ProjectContainer>
         {show && <BlockSpacing />}
     </>

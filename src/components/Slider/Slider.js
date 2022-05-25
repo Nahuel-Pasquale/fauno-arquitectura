@@ -74,7 +74,7 @@ export const WorkSlider = (props) => {
         >
           {props.images.map((image, index) => (
             <SwiperSlide key={index}>
-              <Hero img={image}></Hero>
+              <Hero onClick={ props.onClick } img={image}></Hero>
             </SwiperSlide>
           ))}
         </Swiper>
