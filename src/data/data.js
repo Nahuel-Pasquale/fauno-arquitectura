@@ -22,7 +22,7 @@ export const projects = [
     projectInfo: "Se desarrolla a partir de la idea de optimizar al máximo la luz natural, teniendo en cuentaque su entorno se ve rodeado de abetos altos que enmarcan el lote generando sombra y protección.",
     placeInfo:"Superficie: 127M2 cubiertos y 45M2 semicubiertos.", 
     placeInfo2:"Ubicación: Barrio Miralagos II, Buenos Aires, Arg.", 
-    images: ["images/casa-de-los-abetos/001.jpg", "images/casa-de-los-abetos/002.jpg", "images/casa-de-los-abetos/003.jpg","images/casa-de-los-abetos/004.jpg","images/casa-de-los-abetos/005.jpg","images/casa-de-los-abetos/006.jpg","images/casa-de-los-abetos/007.jpg","images/casa-de-los-abetos/008.jpg","images/casa-de-los-abetos/009.jpg","images/casa-de-los-abetos/010.jpg","images/casa-de-los-abetos/011.jpg","images/casa-de-los-abetos/012.jpg","images/casa-de-los-abetos/013.jpg","images/casa-de-los-abetos/014.jpg","images/casa-de-los-abetos/015.jpg","images/casa-de-los-abetos/016.jpg","images/casa-de-los-abetos/017.jpg"],
+    images: ["images/casa-de-los-abetos/001.jpg", "images/casa-de-los-abetos/002.jpg", "images/casa-de-los-abetos/003.jpg","images/casa-de-los-abetos/004.jpg","images/casa-de-los-abetos/005.jpg","images/casa-de-los-abetos/006.jpg","images/casa-de-los-abetos/007.jpg","images/casa-de-los-abetos/008.jpg","images/casa-de-los-abetos/009.jpg","images/casa-de-los-abetos/010.jpg","images/casa-de-los-abetos/011.jpg","images/casa-de-los-abetos/012.jpg","images/casa-de-los-abetos/016.jpg","images/casa-de-los-abetos/017.jpg","images/casa-de-los-abetos/018.jpg","images/casa-de-los-abetos/019.jpg"],
     bImg: "images/numeros-01.png",
   },
   {
@@ -30,7 +30,7 @@ export const projects = [
     projectInfo: "La casa se ubica en un hermoso predio verde, que se desarrolla en forma de L “abrazando” así el lote y creando un área de resguardo visual y de clima. El nombre se le acuña debido a que el hall de acceso está protagonizado por una cava que conecta la planta baja con el subsuelo a través de la luz, las texturas y la forma.",
     placeInfo: "Superficie: 187M2 cubiertos y 46M2 semicubiertos.",
     placeInfo2: "Ubicación: Barrio Altos de Brandsen, Buenos Aires, Arg.",
-    images: ["images/fauno.jpg", "images/fauno1.jpeg", "images/fauno.jpeg"],
+    images: ["images/casa-bodega/002.jpg", "images/casa-bodega/001.jpg", "images/casa-bodega/003.jpg", "images/casa-bodega/004.jpg", "images/casa-bodega/005.jpg", "images/casa-bodega/006.jpg", "images/casa-bodega/007.jpg", "images/casa-bodega/008.jpg", "images/casa-bodega/009.jpg", "images/casa-bodega/010.jpg"],
     bImg: "images/numeros-02.png",
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
     projectInfo: "El desafío en este proyecto fue el emplazamiento en un lote muy irregular que lleva a que dominen las líneas “quebradas” en todo su esquema. Pero lo más importante es que la casa se abre en forma de “U” con vistas dominantes hacia el lago.",
     placeInfo: "Superficie: 202M2 cubiertos y 95M2 semicubiertos.",
     placeInfo2: "Ubicación: Barrio Magallanes, Buenos Aires, Arg.",
-    images: ["images/fauno.jpg", "images/fauno1.jpeg", "images/fauno.jpeg"],
+    images: ["images/casa-del-lago/001.jpg", "images/casa-del-lago/002.jpg", "images/casa-del-lago/003.jpg", "images/casa-del-lago/004.jpg", "images/casa-del-lago/005.jpg", "images/casa-del-lago/006.jpg", "images/casa-del-lago/007.jpg", "images/casa-del-lago/008.jpg", "images/casa-del-lago/009.jpg", "images/casa-del-lago/010.jpg"],
     bImg: "images/numeros-03.png",
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     projectInfo: "Proyecto en un lote ligeramente irregular y en esquina. La idea principal es protegerse de las visuales del espacio público, es por eso que la casa se conecta con el frente sólo a través de pequeñas rajas de vidrio y decide abrirse completamente hacia el contrafrente en forma de “L”.",
     placeInfo: "Superficie: 151M2 cubiertos y 72M2 semicubiertos.",
     placeInfo2: "Ubicación: Barrio Hudson Park, Buenos Aires, Arg.",
-    images: ["images/casa-esquina/1.jpg", "images/casa-esquina/2.jpg", "images/casa-esquina/3.jpg","images/casa-esquina/4.jpg","images/casa-esquina/5.jpg", "images/casa-esquina/6.jpg", "images/casa-esquina/7.jpg","images/casa-esquina/8.jpg", "images/casa-esquina/9.jpg", "images/casa-esquina/1.jpg", "images/casa-esquina/2.jpg", "images/casa-esquina/3.jpg","images/casa-esquina/4.jpg","images/casa-esquina/5.jpg", "images/casa-esquina/6.jpg", "images/casa-esquina/7.jpg","images/casa-esquina/8.jpg", "images/casa-esquina/9.jpg", "images/casa-esquina/10.jpg","images/casa-esquina/11.jpg","images/casa-esquina/12.jpg","images/casa-esquina/13.jpg","images/casa-esquina/14.jpg","images/casa-esquina/15.jpg","images/casa-esquina/16.jpg"],
+    images: ["images/casa-esquina/1.jpg", "images/casa-esquina/2.jpg", "images/casa-esquina/3.jpg","images/casa-esquina/4.jpg","images/casa-esquina/5.jpg", "images/casa-esquina/6.jpg", "images/casa-esquina/7.jpg","images/casa-esquina/8.jpg", "images/casa-esquina/9.jpg", "images/casa-esquina/10.jpg", "images/casa-esquina/11.jpg", "images/casa-esquina/12.jpg","images/casa-esquina/13.jpg", "images/casa-esquina/15.jpg", "images/casa-esquina/16.jpg"],
     bImg: "images/numeros-04.png",
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
     projectInfo: "Proyecto para un complejo de unidades funcionales de dos plantas ubicado en el campo, al lado de un arroyo, se trata de un desarrollo con las condiciones ideales para cambiar de vida y desconectarse de la ciudad.",
     placeInfo: "Superficie: 105M2 cubiertos y 35M2 semicubiertos.",
     placeInfo2: "Ubicación: Escobar, Buenos Aires, Arg.",
-    images: ["images/fauno.jpg", "images/fauno1.jpeg", "images/fauno.jpeg"],
+    images: ["images/desarrollo-escobar/001.png", "images/desarrollo-escobar/002.png", "images/desarrollo-escobar/003.png", "images/desarrollo-escobar/004.png", "images/desarrollo-escobar/005.png", "images/desarrollo-escobar/006.png", "images/desarrollo-escobar/007.png"],
     bImg: "images/numeros-09.png",
   },
 ]

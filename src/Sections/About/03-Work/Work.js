@@ -58,7 +58,7 @@ const P = styled.p`
 export const Work = () => {
   return (
     <AboutFaunoContainer flexDirection="row-reverse">
-      <AboutFaunoImg image="images/IMAGEN01.jpg">
+      <AboutFaunoImg image="images/desarrollo-escobar/002.png">
         <AboutFaunoImgOverlay />
       </AboutFaunoImg>
       <WorkInfo>
